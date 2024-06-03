@@ -16,7 +16,7 @@
             min-width: 45px;
             justify-content: center;
         }
-        .form-control {
+        .form-control, .form-select {
             height: 45px; 
         }
         .left-box img {
@@ -49,11 +49,21 @@
                     </div>
                     <div class="mb-3 input-group">
                         <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                        <input type="text" class="form-control" id="year" placeholder="Enter the year you are attending">
+                        <select class="form-select" id="year">
+                            <option selected disabled>choose your attending year</option>
+                            <option value="HNC">HNC</option>
+                            <option value="HND">HND</option>
+                            <option value="BSC">BSC</option>
+                            <option value="BSC">Hons</option>
+                        </select>
                     </div>
                     <div class="mb-3 input-group">
                         <span class="input-group-text"><i class="fas fa-graduation-cap"></i></span>
-                        <input type="text" class="form-control" id="major" placeholder="Enter your major">
+                        <select class="form-select" id="major">
+                            <option selected disabled>choose your major</option>
+                            <option value="Networking">Networking</option>
+                            <option value="Software">Software</option>
+                        </select>
                     </div>
                     <div class="mb-3 input-group">
                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
